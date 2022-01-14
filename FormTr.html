@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Arda Alhan</title>
+</head>
+
+<body>
+    <nav>
+        <a href="AnaSayfa.html">Ana Sayfa</a>
+        <a href="Arda_Alhan CV.pdf"target="_blank">Cv</a>
+        <a href="ZamanÇizelgesi.html">Zaman Çizelgesi</a>
+        <a href="FormTr.html">Form</a>
+        <a href="İletişim.html">İletişim</a>
+
+    </nav>
+        <div class="dilsec">
+            <img src="Tr.png" style="height: 20px; display: inline;"><a href="FormEn.html"><p style="color: white; display: inline;margin-left: 5px;">Türkçe</p></a>
+        </div>
+    <section class="Form">
+        <form action="https://formsubmit.co/arda.alhan@stu.fbu.edu.tr" method="post">
+            <div>
+                <div><label for="fname" value="">İsim</label></div>
+                <input type="text" name="fname" id="fname"><br><br>
+                <div><label for="lname">Soyisim</label></div>
+                <input type="text" name="lname" id="lname"><br><br>
+                <div><label for="month">Doğum Tarinini Giriniz:</label></div>
+                <input type="date" id="date" name="dogumgünü"><br><br>
+                <div><label for="">En Sevdiğin Aktivite</label></div>
+                <input type="text" list="hobiler" style="color:goldenrod; width: 22vh; height: 3vh;">
+                <datalist id="hobiler" value="hobilerim">
+                    <option value="Bilgisayar Oyunu Oynamak"></option>
+                    <option value="Dizi İzlemek"></option>
+                    <option value="Futbol"></option>
+                    <option value="Yazılım Dillerini Öğrenmek"></option>
+                </datalist>
+                <br><br><br>
+                <div class="lang"><label for="film">En Sevdiğin Yazılım Dilini Seç:</label></div><br>
+                <input type="radio" id="html" name="fav-language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="C#" name="fav-language" value="C#">
+                <label for="C#">C#</label><br>
+                <input type="radio" id="C++" name="fav-language" value="C++">
+                <label for="C++">C++</label><br>
+                <input type="radio" id="Python" name="fav-language" value="Python">
+                <label for="Python" ">Python</label>
+                <br><br><br>
+                <label for=" email"> <p style="display: block;">E-mail</p></label>
+                <input type="email" name="email" id="email" style="width: 25vh; height: 2vh;"><br><br>
+                <input type="submit" formmethod="post">
+                <br><br>
+                <label for="area" style="display: block;">Bana iletmek istediğiniz isteklerinizi aşağıda
+                    belirtebilirsiniz</label>
+                <textarea id="istek" rows="8" cols="80" name="wishes" style="border: 2px#0b0c10 ; display: inline-block;"></textarea>
+                
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
